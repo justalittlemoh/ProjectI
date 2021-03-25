@@ -1,0 +1,40 @@
+.bg-primary, .btn-primary {
+  background: linear-gradient(180deg, #0B83B7 15%, #88d9fc 98.68%); }
+
+.site-footer {
+  background: linear-gradient(to top, #0B83B7 15%, #88d9fc 98.68%);
+  position: relative;
+  bottom: 0; }
+
+.fa {
+  color: #1e0db3; }
+
+.carousel-caption {
+  background-color: rgba(68, 105, 199, 0.45);
+  color: linear-gradient(to left, white 15%, #cfdcff 25%);
+  font-size: 2em;
+  width: fluid;
+  float: left; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 3em; }
+
+.carousel-item div {
+  background-color: rgba(68, 105, 199, 0.45);
+  color: linear-gradient(to left, white 15%, #cfdcff 25%);
+  font-size: 2em;
+  position: relative;
+  bottom: 2em; }
+
+h2, h3, h4, h5, h6 {
+  color: #1e0db3; }
+
+#impressum, a:link {
+  color: #1e0db3; }
+
+a {
+  font-weight: bold; }
+
+a:hover {
+  background-color: linear-gradient(180deg, #0B83B7 15%, #88d9fc 98.68%); }

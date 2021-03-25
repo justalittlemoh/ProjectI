@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="h-100">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Homepage Finanzen</title>
+    </head>
+
+<body class="d-flex flex-column min-vh-100">  
+    <header class="bg-primary container-fluid sticky-lg-top">
+        <div class="row row-content p-2 align-items-center justify-content-between text-center">
+            <div class="col-12  col-md-2 justify-content-md-start">
+                <a href="#"><img src="img/mst.svg" alt="Maurice's personal Logo"></a>
+            </div>
+            <div class="col-12 col-md-5 ms-auto">
+                <nav class="navbar navbar-expand-md sticky-top " >
+                    <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="fa fa-2x fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <menu class="navbar-nav" >
+                            <li class="nav-item mx-2 mx-lg-3 mx-x-4"><a href="#"><h3>Services</h3></a></li>
+                            <li class="nav-item mx-2 mx-lg-3 mx-x-4"><a href="#"><h3>Blog</h3></a></li>
+                            <li class="nav-item mx-2 mx-lg-3 mx-x-4"><a href="#"><h3>About</h3></a></li>
+                        </menu>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <main class="container my-auto">
+        <div class="row my-auto py-5 align-items-center">
+            <div class="col mx-auto">
+                <div id="homeCarousel" class="carousel align-self-center carousel-fade slide m-2" data-ride="carousel">
+                    
+                    <div class="carousel-inner d-lg-none" >
+                        <div class="carousel-item active" id="1st-carousel-item">
+                            <img src="img/wakeup.png" class="d-block w-100 m-auto rounded-circle carousel-img" id="">
+                            <div class="container-fluid p-3 text-white text-center rounded m-auto d-block">
+                                <p>increase your financial literacy</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="2nd-carousel-item">
+                            <img src="img/switches.png" class="d-block w-100 m-auto rounded-circle carousel-img" id="">
+                            <div class="container-fluid p-3 text-white text-center rounded m-auto d-block">
+                                <p>Switches on for the future</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="3rd-carousel-item">
+                            <img src="img/commitment.png" class="d-block w-100 m-auto rounded-circle carousel-img" id="">
+                            <div class="container-fluid p-3 text-white text-center rounded m-auto d-block">
+                                <p>Make an appointment now</p>
+                            </div>
+                        </div>
+
+                    <ol class="carousel-indicators " id="carouselIndicator">
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    </ol>
+                    </div>
+                </div>
+                <div id="homeCarousel-lg" class="carousel align-self-center carousel-fade slide d-none d-lg-block m-2" data-ride="carousel">
+                    <!-- carousel for medium and up viewports -->
+                    <div class="carousel-inner " >
+                        <div class="carousel-item active" id="4th-carousel-item">
+                            <img src="img/wakeup.png" class="d-block w-100 m-auto rounded-circle carousel-img" >
+                            <div class="btn container-fluid p-3 text-white text-center rounded m-auto d-block" id="">
+                                <p >Increase your financial literacy</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="5th-carousel-item">
+                            <img src="img/switches.png" class="d-block w-100 m-auto rounded-circle carousel-img" >
+                            <div class="btn container-fluid p-3 text-white text-center rounded m-auto d-block" id="">
+                                <p >Switches on for the future</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="6th-carousel-item">
+                            <img src="img/commitment.png" class="d-block w-100 m-auto rounded-circle carousel-img" >
+                            <div class="btn container-fluid p-3 text-white text-center rounded m-auto d-block"  id="">
+                                <p>Make an appointment now</p>
+                            </div>
+                        </div>
+                    </div>
+                        <ol class="carousel-indicators " id="carouselIndicator">
+                            <li data-target="#homeCarousel-lg" data-slide-to="0" class="active"></li>
+                            <li data-target="#homeCarousel-lg" data-slide-to="1"></li>
+                            <li data-target="#homeCarousel-lg" data-slide-to="2"></li>
+                        </ol>
+                </div>
+            </div>
+            <div class="w-100 d-block d-lg-none"></div>
+            <div class="row row-content m-2 col justify-content-around justify-content-lg-end " >
+                <div class="col-7 m-2 col-lg-7 col-md-5  p-lg-2">
+                    <a role="button" href="https://www.google.ch/?hl=de" class=" btn btn-primary btn-lg container-fluid" id="btnAppointment"><h3>Make an appointment</h3></a>
+                </div>
+            
+                <div class="col-7 m-2 col-lg-7 col-md-5  p-lg-2">
+                    <a role="button" href="https://www.google.ch/?hl=de" class=" btn btn-primary btn-lg container-fluid" id="btnReadBlog"><h3>Check my blog out</h3></a>
+                </div>
+            
+                <div class="col-7 m-2 col-lg-7 col-md-5  p-lg-2">
+                    <a role="button" href="https://www.google.ch/?hl=de" class=" btn btn-primary btn-lg container-fluid" id="btnLearnMore"><h3>Learn more about me</h3></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+  
+
+
+
+
+    <footer class="site-footer mt-auto container-fluid">
+        <div class="row  align-items-center p-3 text-center">
+            <div class="col d-md-none text-left pl-5">
+                <div class="col-12">
+                    <a href="#"><h4>Contact</h4></a>
+                    </div> 
+                    <div class="w-100 d-none d-md-block"></div>
+                    <div class="col-12">
+                    <a href="#" id="impressum">&copy; 2021 Impressum</a>
+                    </div> 
+            </div>
+            <div class="col d-none d-md-block row text-left pl-5">
+                <div class="col-12">
+                <a href="#"><h4>FAQ</h4></a>
+                </div> 
+                <div class="w-100 d-none d-md-block"></div>
+                <div class="col-12">
+                <a href="#" id="impressum">&copy; 2021 Impressum</a>
+                </div> 
+            </div>
+            <div class="d-none d-md-block order-last col text-right pr-5">
+                <a href="#"><h4>Contact</h4></a>
+            </div>
+            <div class="col ">       
+                    <a href="www.facebook.ch"><i class="fa fa-2x m-0  m-1 fa-facebook"></i></a>
+                    <a href="www.linkedin.ch"><i class="fa fa-2x m-0  m-1 fa-linkedin"></i></a>
+                    <a href="www.instagram.ch"><i class="fa fa-2x m-0  m-1 fa-instagram"></i></a>
+                    <a href="www.twitter.ch"><i class="fa fa-2x m-0  m-1 fa-twitter"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+        
+</body>
+
+</html>
