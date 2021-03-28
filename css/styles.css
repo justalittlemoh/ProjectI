@@ -1,13 +1,28 @@
 .bg-primary, .btn-primary {
-  background: linear-gradient(180deg, #0B83B7 15%, #88d9fc 98.68%); }
+  background: linear-gradient(180deg, #0B83B7 10%, #88d9fc 70%, white 100%); }
+
+.bg-success {
+  background: linear-gradient(to top right, #88d9fc, #dfed83 95%, #ffff33); }
+
+.btn {
+  box-shadow: 0.0625em 0.15em 0.3em rgba(0, 0, 0, 0.5); }
+
+.btn-custom {
+  background: linear-gradient(to top, #0B83B7 10%, #88d9fc 70%, white 100%); }
 
 .site-footer {
-  background: linear-gradient(to top, #0B83B7 15%, #88d9fc 98.68%);
+  background: linear-gradient(to top, #0B83B7 10%, #88d9fc 70%, white 100%);
   position: relative;
   bottom: 0; }
 
 .fa {
   color: #1e0db3; }
+
+.bg-h {
+  background-color: #92CDE7; }
+
+.bg-p {
+  background-color: #D6EEF9; }
 
 .carousel-caption {
   background-color: rgba(68, 105, 199, 0.45);
@@ -30,11 +45,34 @@
 h2, h3, h4, h5, h6 {
   color: #1e0db3; }
 
-#impressum, a:link {
+h1 {
   color: #1e0db3; }
 
+ol li {
+  list-style-position: inside; }
+
+.nav-item {
+  display: block;
+  border: none 0.1em rgba(68, 105, 199, 0.45);
+  border-radius: 5px;
+  background-color: linear-gradient(to top, #0B83B7 10%, #88d9fc 70%, white 100%);
+  width: 6.5em; }
+
+.nav-item:hover, .btn:hover {
+  background-color: rgba(255, 255, 255, 0.4); }
+
 a {
-  font-weight: bold; }
+  font-weight: bold;
+  text-shadow: 0.0625em 0.15em 0.3em rgba(0, 0, 0, 0.5); }
 
 a:hover {
-  background-color: linear-gradient(180deg, #0B83B7 15%, #88d9fc 98.68%); }
+  text-shadow: 0.06em 0.1em 0.2em rgba(255, 255, 255, 0.5); }
+
+#impressum, a:link, .button a {
+  color: #1e0db3; }
+
+.text-shadow {
+  text-shadow: 0.0625em 0.15em 0.3em rgba(0, 0, 0, 0.5); }
+
+.color-main {
+  color: #1e0db3; }

@@ -1,17 +1,34 @@
 // color settings:
-$gradient-header: linear-gradient(180deg, #0B83B7 15%, rgba(136, 217, 252, 100) 98.68%);
-$gradient-Footer: linear-gradient( to top, #0B83B7 15%, rgba(136, 217, 252, 80) 98.68%);
+$gradient-header: linear-gradient(180deg, #0B83B7 10%, rgba(136, 217, 252, 1) 70%, rgba(255,255,255, 1) 100%);
+$gradient-Footer: linear-gradient( to top, #0B83B7 10%, rgba(136, 217, 252,1) 70%, rgba(255,255,255, 1) 100%);
 
 $main-color: rgb(30, 13, 179);
 $caption-color: 
 rgba(68, 105, 199, 0.45);
 $caption-gradient: linear-gradient(to left, rgba(255,255,255,1) 15%, rgba(
 207,220,255,1)25%);
+
+$cta-gradient: linear-gradient(to top right, rgba(136, 217, 252, 1), rgba(223,237,131,1) 95%,rgba(255,273,51,1));
+$bg-header: #92CDE7;
+$bg-p:#D6EEF9;
+
 // Bootstrap-alternations
 
-.bg-primary, .btn-primary {
+.bg-primary, .btn-primary  {
     background: $gradient-header;
-    // height: 16.875rem; // 270 px
+    
+}
+
+.bg-success {
+    background: $cta-gradient;
+}
+
+.btn{
+    box-shadow: 0.0625em 0.15em 0.3em rgba(0,0,0,0.5);
+}
+
+.btn-custom {
+    background:$gradient-Footer
 }
 
 .site-footer {
@@ -27,7 +44,13 @@ $caption-gradient: linear-gradient(to left, rgba(255,255,255,1) 15%, rgba(
     color:$main-color;
 }
 
+.bg-h {
+    background-color:$bg-header;
+}
 
+.bg-p {
+    background-color: $bg-p;
+}
 
 // carousel
 
@@ -56,21 +79,63 @@ $caption-gradient: linear-gradient(to left, rgba(255,255,255,1) 15%, rgba(
 // Element-selectors
 h2,h3,h4,h5,h6 {
     color:$main-color;
+    
 }
 
-#impressum, a:link {
-    color:$main-color;
+h1 {
+    color: $main-color;
+
 }
+
+
+
+ol li {
+    list-style-position: inside ;
+    
+}
+
+.nav-item {
+    display: block;
+    border: none 0.1em $caption-color;
+    border-radius: 5px;
+    background-color: $gradient-Footer;
+    width: 6.5em;
+    
+}
+
+.nav-item:hover, .btn:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+
+//links
 
 a {
     font-weight: bold;
+    text-shadow: 0.0625em 0.15em 0.3em rgba(0,0,0,0.5);
 }
 
 a:hover {
-    background-color: $gradient-footer;
-    color: white;
+    text-shadow: 0.06em 0.1em 0.2em rgba(255,255,255,0.5); 
 }
 
-// Navigation
+#impressum, a:link, .button a {
+    color:$main-color;
+}
 
+
+
+
+// font & text-effects
+
+.text-shadow {
+    text-shadow: 0.0625em 0.15em 0.3em rgba(0,0,0,0.5); 
+}
+
+
+
+
+.color-main {
+    color: $main-color;
+}
 

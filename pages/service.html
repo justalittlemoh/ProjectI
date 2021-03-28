@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="h-100">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>How it works</title>
+    </head>
+
+<body class="d-flex flex-column min-vh-100">  
+    <header class="bg-primary container-fluid sticky-lg-top shadow">
+        <div class="row row-content  p-2 align-items-center text-center justify-content-between ">
+            <div class="col-12 m-auto col-md-2 ml-3">
+                <a href="../index.html"><img src="../img/mst.svg" alt="Maurice's personal Logo"></a>
+            </div>
+            <div class="col-12 col-md-8 mx-auto text-md-right">
+                <nav class="navbar navbar-expand-md m-auto d-inline-block" >
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="fa fa-2x fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <menu class="navbar-nav text-center" >
+                            <li class="nav-item m-2 shadow"><a href="../index.html"><h3>Home</h3></a></li>                            
+                            <li class="nav-item m-2 shadow"><a href="#"><h3>Service</h3></a></li>
+                            <li class="nav-item m-2 shadow"><a href="blog-main.html"><h3>Blog</h3></a></li>
+                            <li class="nav-item m-2 shadow"><a href="about.html"><h3>About</h3></a></li>
+                        </menu>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <main class="container my-auto ">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md text-center text-md-left my-3 p-0">
+                <h1 class="text-shadow">How it works:</h1>
+            </div>
+            <div class="col col-md-4 shadow p-0">
+                <button class="btn btn-custom container-fluid shadow activateContact">
+                    <h4 class="text-shadow">Contact me now</h4>
+                </button>
+            </div>
+        </div>
+        <div class="row row-content align-items-center justify-content-around my-2">
+            <div class="rounded col-sm-4 col-md-3 py-5 px-1 bg-h text-center" >
+                <h2 class="text-light text-shadow">1) Get in touch</h2>
+            </div>
+            <div class="col m-0 p-0 m-1 text-center">
+                <img class=" w-50" src="../img/telefon.png" alt="retro telephone">
+            </div>
+            <div class="rounded col-lg-5 col-md-6  bg-p ">
+                    <p class="my-1">I will contact you over the phone for a first contact.</p>
+                    <p class="my-1">first questions can be answered here.</p>
+                    <p class="my-1">If the chemistry fits, then we will arrange for the first meetup.</p>
+            </div>  
+        </div>
+        <div class="row row-content align-items-center justify-content-around my-2">
+            <div class="rounded order-md-last col-sm-4 col-md-3 py-5 px-1 bg-h text-center" >
+                <h2 class="text-light text-shadow">2) First Meetup</h2>
+            </div>
+            <div class="col m-0 p-0 m-1 text-center">
+                <img class=" w-75" src="../img/analysis.png" alt="retro telephone">
+            </div>
+            <div class="rounded col-lg-5 col-md-6 order-md-first bg-p ">
+                <p class="my-1">We have our first appointment to make an analysis of your current financial situation as well as your insurances.</p>
+                <p class="my-1">If you have any questions about the swiss system you can ask them.</p>
+                <p class="my-1">Together, we will talk about what you want and need.</p>
+            </div>  
+        </div>
+        <div class="row row-content align-items-center justify-content-around my-2">
+            <div class="rounded col-sm-4 col-md-3 py-5 px-1 bg-h text-center" >
+                <h2 class="text-light text-shadow">3) Second Appointment</h2>
+            </div>
+            <div class="col m-0 px-2 m-1 text-center">
+                <img class=" w-75" src="../img/strategy.png" alt="retro telephone">
+            </div>
+            <div class="rounded col-lg-5 col-md-6  bg-p ">
+                <p class="my-1">I will contact you over the phone for a first contact.</p>
+                <p class="my-1">first questions can be answered here.</p>
+                <p class="my-1">If the chemistry its, then we will arrange for the first meetup.</p>
+            </div>  
+        </div>
+    
+    </main>
+
+<!-- Modals here -->
+<div id="contactModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-success">
+                <h3 class="modal-title">Want to talk or chat?</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="emailInput">Email</label>
+                                <input id="emailInput"  type="email" class="form-control" placeholder="your@email.com">
+                            </div>
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="passwordInput">Password</label>
+                                <input id="passwordInput" type="tel" class="form-control" placeholder="+41 79 ... type your number">
+                            </div>
+
+  <!-- this checkbox can be put into the other .form-row so it is on one line with the buttons -->
+                            <div class="col">
+                                <textarea class="form-control" id="messageArea" placeholder="Send me a message"></textarea>
+                                <label for="#messageArea"> I will be calling you in the next 24 hours </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Send</button>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modals end here -->
+
+    <footer class="site-footer mt-auto container-fluid shadow-lg">
+        <div class="row  align-items-center p-3 text-center">
+            <div class="col d-md-none text-left pl-3 pl-sm-5">
+                <div class="row">
+                    <div class="col-12">
+                        <a role="button" class="d-inline-block activateContact"><h5>Contact</h5></a>
+                        <a class="ml-sm-4 d-inline-block" href="faq.html">FAQ</a>
+                    </div> 
+                <div class="w-100 d-none d-md-block"></div>
+                    <div class="col-12">
+                    <a href="impressum.html" id="impressum">&copy; 2021 Impressum</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col d-none d-md-block row text-left pl-5">
+                <div class="col-12">
+                    <a  href="faq.html">FAQ</a>
+                </div> 
+                <div class="w-100 d-none d-md-block"></div>
+                <div class="col-12">
+                <a href="impressum.html" id="impressum">&copy; 2021 Impressum</a>
+                </div> 
+            </div>
+            <div class="d-none d-md-block order-last col text-right pr-5">
+                <a role="button" class="activateContact"><h4>Contact</h4></a>
+            </div>
+            <div class="col">       
+                    <a href="www.facebook.ch"><i class="fa fa-2x m-0  m-1 fa-facebook"></i></a>
+                    <a href="www.linkedin.ch"><i class="fa fa-2x m-0  m-1 fa-linkedin"></i></a>
+                    <a href="www.instagram.ch"><i class="fa fa-2x m-0  m-1 fa-instagram"></i></a>
+                    <a href="www.twitter.ch"><i class="fa fa-2x m-0  m-1 fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../js/scripts.js"></script>
+
+        
+</body>
+
+</html>
